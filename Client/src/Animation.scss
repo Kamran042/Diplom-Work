@@ -1,0 +1,156 @@
+.swiper-slide .slide-inner .slide-content {
+  opacity: 0;
+}
+.swiper-slide.swiper-slide-active .slide-inner .slide-content {
+  opacity: 1;
+}
+
+/* ---Slider Animation--- */
+.animation-style-01.swiper-slide-active .slide-content .offer {
+  animation-name: fadeInUp;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 991px) {
+  .animation-style-01.swiper-slide-active .slide-content .offer {
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+.animation-style-01.swiper-slide-active .slide-content .title {
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 991px) {
+  .animation-style-01.swiper-slide-active .slide-content .title {
+    animation-name: fadeInUp;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+.animation-style-01.swiper-slide-active .slide-content .short-desc {
+  animation-name: fadeInUp;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 991px) {
+  .animation-style-01.swiper-slide-active .slide-content .short-desc {
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+.animation-style-01.swiper-slide-active .slide-content .btn-wrap {
+  animation-name: fadeInUp;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 991px) {
+  .animation-style-01.swiper-slide-active .slide-content .btn-wrap {
+    animation-name: fadeInUp;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+.animation-style-01.swiper-slide-active .inner-img {
+  animation-name: fadeInUp;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 991px) {
+  .animation-style-01.swiper-slide-active .inner-img {
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+
+.animation-style-02.swiper-slide-active .slide-content .title {
+  animation-name: fadeInUp;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.animation-style-02.swiper-slide-active .slide-content .short-desc {
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.animation-style-02.swiper-slide-active .slide-content .btn-wrap {
+  animation-name: fadeInUp;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* ---Wave Button--- */
+@keyframes wave-button {
+  0% {
+    opacity: 1;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.wave-btn {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.wave-btn > .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wave-btn > .icon i {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #abd373;
+  font-size: 55px;
+}
+.wave-btn span {
+  background: #abd373;
+  position: absolute;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.wave-btn span:nth-child(1) {
+  background: #abd373;
+  animation: wave-button 2s infinite 0.1s linear backwards;
+}
+.wave-btn span:nth-child(2) {
+  background: #abd373;
+  animation: wave-button 3s infinite 0.5s linear backwards;
+}
+.wave-btn span:nth-child(3) {
+  background: #abd373;
+  animation: wave-button 4s infinite 1s linear backwards;
+}

@@ -1,0 +1,301 @@
+.banner-item {
+  position: relative;
+}
+.banner-img img {
+  width: 100%;
+}
+@media (max-width: 479px) {
+  .banner-img {
+    height: 250px;
+  }
+  .banner-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.banner-content {
+  position: absolute;
+  width: 100%;
+}
+.banner-content .collection {
+  color: #2d2d2d;
+  display: block;
+}
+.banner-content .title {
+  color: #2d2d2d;
+  font-size: 36px;
+}
+@media (max-width: 1199px) {
+  .banner-content .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-content .title {
+    font-size: 25px;
+  }
+}
+.banner-content.text-position-left {
+  width: calc(100% - 70px);
+  top: 50px;
+  left: 70px;
+}
+@media (max-width: 767px) {
+  .banner-content.text-position-left {
+    top: 25px;
+    left: 30px;
+  }
+}
+.banner-content.text-position-left .collection {
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .banner-content.text-position-left .collection {
+    margin-bottom: 0;
+  }
+}
+.banner-content.text-position-left .title {
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .banner-content.text-position-left .title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-content.text-position-left .title {
+    margin-bottom: 10px;
+  }
+}
+.banner-content.text-position-center {
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.banner-content.text-position-center .collection {
+  margin-bottom: 5px;
+}
+.banner-content.text-position-center .title {
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .banner-content .btn-custom-size {
+    width: 135px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-content .btn-custom-size {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+}
+.banner-style-2 .banner-content.text-position-left {
+  top: 45px;
+  left: 40px;
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content.text-position-left {
+    top: 25px;
+    left: 30px;
+  }
+}
+.banner-style-2 .banner-content.text-position-left .collection {
+  margin-bottom: 5px;
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content.text-position-left .collection {
+    margin-bottom: 0;
+  }
+}
+.banner-style-2 .banner-content.text-position-left .title {
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content.text-position-left .title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+.banner-style-2 .banner-content.text-position-center {
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.banner-style-2 .banner-content.text-position-center .collection {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content.text-position-center .collection {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+.banner-style-2 .banner-content.text-position-center .title {
+  margin-bottom: 25px;
+  font-size: 48px;
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content.text-position-center .title {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-style-2 .banner-content .btn-custom-size {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+}
+.banner-with-counter {
+  background-color: #faf8f8;
+  margin-top: 200px;
+}
+.banner-with-counter .banner-boxshadow {
+  box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: -200px;
+}
+.banner-with-counter .banner-item {
+  height: 500px;
+}
+.banner-with-counter .banner-item .popup-btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.banner-with-counter .counter-area {
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .banner-with-counter .counter-area {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-with-counter .counter-area {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-with-counter .counter-area {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-with-counter .counter-area {
+    text-align: center;
+  }
+}
+.banner-with-counter .counter-title {
+  font-style: italic;
+  font-size: 36px;
+  line-height: 57px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+@media (max-width: 575px) {
+  .banner-with-counter .counter-title {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+}
+.banner-with-counter .counter-title span {
+  color: #abd373;
+}
+.banner-with-counter .counter-item {
+  padding-left: 70px;
+}
+@media (max-width: 575px) {
+  .banner-with-counter .counter-item {
+    padding-left: 0;
+  }
+}
+.banner-with-counter .counter-item .count-wrap {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .banner-with-counter .counter-item .count-wrap {
+    justify-content: center;
+  }
+}
+.banner-with-counter .counter-item .count-wrap * {
+  color: #abd373;
+  font-size: 40px;
+}
+.banner-with-counter .counter-item .count-wrap .prefix {
+  line-height: 1;
+}
+.banner-with-counter .counter-item .count-title {
+  color: #3b3b3b;
+  font-weight: 300;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .banner-with-counter [class*="col-"]:not(:last-child) .counter-item {
+    border-right: 1px solid #dcdcdc;
+  }
+}
+.banner-bg-image {
+  height: 400px;
+}
+.banner-bg-image .inner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .banner-bg-image .inner-content {
+    width: calc(100% - 50px);
+    padding-left: 0;
+    margin: 0 auto;
+  }
+}
+.banner-bg-image .inner-content .offer {
+  color: #abd373;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .banner-bg-image .inner-content .offer {
+    font-size: 20px;
+  }
+}
+.banner-bg-image .inner-content .title {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  .banner-bg-image .inner-content .title {
+    font-size: 24px;
+  }
+}
+.banner-bg-image .inner-content .discount {
+  margin-bottom: 35px;
+  font-size: 48px;
+}
+@media (max-width: 767px) {
+  .banner-bg-image .inner-content .discount {
+    font-size: 28px;
+  }
+}
+.banner-bg-image .inner-content .discount span {
+  color: #abd373;
+}

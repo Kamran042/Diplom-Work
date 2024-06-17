@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Animation.scss";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ROUTES from "./Routes/Routes";
 import MainContext from "./Context/Context";
