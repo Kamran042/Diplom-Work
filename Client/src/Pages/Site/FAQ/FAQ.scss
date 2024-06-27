@@ -1,0 +1,56 @@
+.frequently-area h2.heading {
+  padding-bottom: 60px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.frequently-area .frequently-item > ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.has-sub,
+.frequently-area .frequently-item > ul > li.children {
+  border: 1px solid #dee2e6;
+  padding: 20px ;
+  margin-bottom: 20px;
+
+}
+.frequently-area .frequently-item > ul > li.has-sub > a,
+.frequently-area .frequently-item > ul > li.children > a {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555252;
+}
+.frequently-area .frequently-item > ul > li.has-sub > a:hover,
+.frequently-area .frequently-item > ul > li.children > a:hover {
+  color: #abd373;
+}
+.frequently-area .frequently-item > ul > li.has-sub > a i,
+.frequently-area .frequently-item > ul > li.children > a i {
+  font-size: 25px;
+}
+.frequently-area .frequently-item > ul > li.has-sub > ul.frequently-body,
+.frequently-area .frequently-item > ul > li.children > ul.frequently-body {
+  display: none;
+  padding-top: 20px;
+}
+.frequently-area .frequently-item > ul > li.has-sub > ul.frequently-body > li,
+.frequently-area .frequently-item > ul > li.children > ul.frequently-body > li {
+  line-height: 1.8;
+}
+.frequently-area .frequently-item > ul > li.has-sub.open > a,
+.frequently-area .frequently-item > ul > li.children.open > a {
+  color: #abd373;
+}
+.frequently-area .frequently-item > ul > li.has-sub.open > a > i:before,
+.frequently-area .frequently-item > ul > li.children.open > a > i:before {
+  content: "\e682";
+}
+
+.section-space-top-95 {
+  padding-top: 75px;
+}
+

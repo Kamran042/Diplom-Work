@@ -1,0 +1,14 @@
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Скрыть стандартные кнопки управления в Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.wishlist-active{
+  color: red !important;
+}

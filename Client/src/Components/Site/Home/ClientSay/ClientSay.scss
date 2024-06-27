@@ -1,0 +1,94 @@
+@media (min-width: 576px) {
+  .testimonial-area .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.testimonial-area .custom-space {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 479px) {
+  .testimonial-area .custom-space {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.testimonial-bg {
+  padding-top: 100px;
+  min-height: 440px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 479px) {
+  .testimonial-bg {
+    padding-top: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.testimonial-slider {
+  margin: -10px;
+  padding: 10px;
+}
+.testimonial-slider.with-bg {
+  margin-top: -180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+@media (max-width: 575px) {
+  .testimonial-slider.with-bg {
+    margin-top: -150px;
+  }
+}
+@media (max-width: 479px) {
+  .testimonial-slider.with-bg {
+    margin-top: -85px;
+  }
+}
+.testimonial-item {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-item:hover:before {
+  background-color: #525252;
+}
+.testimonial-item:before {
+  content: url("https://htmldemo.net/pronia/pronia/assets/images/testimonial/icon/quotation.png");
+  border-bottom-left-radius: 100%;
+  background-color: #abd373;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 125px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  padding-left: 15px;
+  transition: all 0.3s ease 0s;
+}
+.testimonial-item .user-name {
+  text-transform: uppercase;
+  color: #434343;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+.testimonial-item .user-occupation {
+  color: #434343;
+}
+.testimonial-item .user-comment {
+  color: #434343;
+  font-style: italic;
+  line-height: 32px;
+}
+
+.testimonial-bg {
+  background-image: url("https://htmldemo.net/pronia/pronia/assets/images/testimonial/bg/1-1-1820x443.jpg");
+}

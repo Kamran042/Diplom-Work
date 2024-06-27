@@ -1,3 +1,4 @@
+
 .dropdown .btn-link {
     outline: 0;
     border: 0;
@@ -468,6 +469,7 @@
 .header-sticky {
     transition: all ease 0.4s;
     opacity: 0;
+    display: none;
 }
 
 .sticky {
@@ -694,7 +696,7 @@
   font-weight: 600;
 }
 .offcanvas-minicart_wrapper .offcanvas-body .minicart-content .minicart-list {
-  max-height: 595px;
+  max-height: 495px;
   position: relative;
   overflow: auto;
 }
@@ -706,9 +708,14 @@
 .offcanvas-minicart_wrapper .offcanvas-body .minicart-content .minicart-list li.minicart-product {
   display: flex;
 }
-.offcanvas-minicart_wrapper .offcanvas-body .minicart-content .minicart-list li.minicart-product a.product-item_remove i {
+.offcanvas-minicart_wrapper .offcanvas-body .minicart-content .minicart-list li.minicart-product button{
+  background:none;
+  border: none;
+}
+.offcanvas-minicart_wrapper .offcanvas-body .minicart-content .minicart-list li.minicart-product button.product-item_remove i {
   position: absolute;
   font-size: 20px;
+
   top: auto;
   right: 15px;
 }
@@ -742,7 +749,7 @@
   padding: 25px 0 30px;
 }
 .offcanvas-minicart_wrapper .offcanvas-body .group-btn_wrap {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 .offcanvas-minicart_wrapper .offcanvas-body .group-btn_wrap .btn:hover {
   background-color: #abd373;

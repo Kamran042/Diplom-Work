@@ -1,0 +1,102 @@
+.table-content table td.product-subtotal {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .table-content table td.quantity .cart-plus-minus {
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 767px) {
+    .cart-area .table-content table td:nth-child(3) {
+      padding: 45.1px 10px;
+    }
+  }
+  
+  .coupon-all {
+    margin-top: 30px;
+  }
+  .coupon-all .coupon {
+    float: left;
+  }
+  .coupon-all .coupon input {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    font-size: 13px;
+    border-radius: 0;
+    height: 42px;
+    width: 120px;
+    padding: 0 10px;
+  }
+  .coupon-all .coupon input.button,
+  .coupon-all .coupon2 input.button {
+    background-color: #505050;
+    border: 0 none;
+    border-radius: 2px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 42px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    width: inherit;
+  }
+  .coupon-all .coupon input.button:hover,
+  .coupon-all .coupon2 input.button:hover {
+    background-color: #abd373;
+  }
+  .coupon-all .coupon.coupon2,
+  .coupon-all .coupon2.coupon2 {
+    float: right;
+  }
+  @media (max-width: 479px) {
+    .coupon-all .coupon.coupon2,
+  .coupon-all .coupon2.coupon2 {
+      margin-top: 15px;
+    }
+  }
+  
+  .cart-page-total {
+    padding-top: 30px;
+  }
+  .cart-page-total > h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .cart-page-total > ul {
+    border: 1px solid #dee2e6;
+  }
+  .cart-page-total > ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 700;
+  }
+  .cart-page-total > ul li:last-child {
+    border-bottom: 0;
+  }
+  .cart-page-total > ul li span {
+    float: right;
+  }
+  .cart-page-total a {
+    background-color: #505050;
+    border: 0;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+  }
+  .cart-page-total a:hover {
+    background-color: #abd373;
+    color: #ffffff;
+  }
+  

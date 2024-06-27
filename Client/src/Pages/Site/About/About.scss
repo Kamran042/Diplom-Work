@@ -1,0 +1,156 @@
+.about-title {
+  font-size: 60px;
+  line-height: 57px;
+  margin-bottom: 90px;
+}
+.about-title span {
+  color: #abd373;
+  position: relative;
+}
+.about-title span:before {
+  content: url("https://htmldemo.net/pronia/pronia/assets/images/about/icon/1.png");
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+.about-desc {
+  font-size: 18px;
+  line-height: 31px;
+  margin-bottom: 30px;
+}
+
+/* ---Team--- */
+@media (max-width: 991px) {
+  .team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team-item:hover .team-img .inner-content {
+  opacity: 1;
+  visibility: visible;
+}
+.team-item:hover .team-content {
+  opacity: 0;
+}
+.team-img {
+  background-color: #abd373;
+  border-radius: 100%;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .team-img {
+    background-color: transparent;
+  }
+}
+@media (min-width: 992px) {
+  .team-img img {
+    width: 100%;
+  }
+}
+.team-img .inner-content {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 135px;
+  text-align: center;
+  padding-top: 25px;
+  border-end-end-radius: 125px;
+  border-end-start-radius: 125px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 991px) {
+  .team-img .inner-content {
+    width: 270px;
+  }
+}
+@media (max-width: 767px) {
+  .team-img .inner-content {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .team-img .inner-content {
+    width: 270px;
+  }
+}
+.team-img .inner-content .occupation {
+  color: #696565;
+  font-size: 14px;
+}
+.team-img .inner-content .social-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  z-index: 1;
+}
+.team-img .inner-content .social-link ul li:not(:last-child) {
+  padding-right: 10px;
+}
+.team-img .inner-content .social-link ul li:nth-child(1),
+.team-img .inner-content .social-link ul li:nth-child(3) {
+  transform: translateY(-10px);
+}
+.team-img .inner-content .social-link ul li a {
+  background-color: #ffffff;
+}
+.team-img .inner-content .social-link ul li a:hover {
+  background-color: #abd373;
+  border-color: #abd373;
+  color: #ffffff;
+}
+.team-content {
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  padding-top: 25px;
+  opacity: 1;
+}
+.team-member-name {
+  color: #363636;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Custom styles for modal */
+.mfp-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 1000;
+  width: calc(177.778vw);
+  height: calc(51vh);
+  max-width: 700px;
+  padding: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mfp-iframe-scaler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+.mfp-close {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}

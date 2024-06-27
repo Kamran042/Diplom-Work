@@ -1,0 +1,293 @@
+.blog-content .title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 1199px) {
+    .blog-content .title {
+      font-size: 21px;
+    }
+  }
+  .blog-content .title a {
+    color: #525252;
+  }
+  .blog-content .title a:hover {
+    color: #abd373;
+  }
+  .blog-content .short-desc {
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+  .blog-meta {
+    margin-bottom: 20px;
+  }
+  .blog-meta * {
+    color: #abd373;
+  }
+  .blog-meta ul li {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .blog-meta ul li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .blog-meta ul li i {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .blog-img .img-full {
+    height: 100%;
+  }
+  .blog-img .inner-btn i {
+    border: 2px solid #abd373;
+    background-color: #f6f7fb;
+    color: #abd373;
+    border-radius: 100%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .blog-img .inner-btn-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .blog-item {
+    background-color: #f6f7fb;
+    padding: 35px 30px 40px 30px;
+    border-radius: 10px;
+  }
+  .blog-item-wrap.list-item-wrap .blog-content {
+    height: 100%;
+  }
+  .blog-item-wrap.list-item-wrap .blog-content .inner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .blog-list-item {
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    .blog-list-item {
+      flex-direction: column;
+    }
+  }
+  .blog-list-item .blog-img {
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .blog-list-item .blog-img {
+      width: 100%;
+    }
+  }
+  .blog-list-item .blog-content {
+    padding-right: 30px;
+    width: 50%;
+    align-self: center;
+  }
+  @media (max-width: 767px) {
+    .blog-list-item .blog-content {
+      width: 100%;
+      padding-right: 0;
+      padding-top: 30px;
+    }
+  }
+  .blog-list-item .ratio {
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .blog-list-item .ratio {
+      width: 100%;
+    }
+  }
+  .blog-detail-item {
+    background-color: #f6f7fb;
+    border-radius: 15px;
+    padding-top: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 55px;
+  }
+  @media (max-width: 479px) {
+    .blog-detail-item {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .blog-detail-item .short-desc {
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .blog-detail-item .blog-img {
+    margin-bottom: 50px;
+  }
+  .blog-detail-item .blog-content .title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  .blog-detail-item .blog-meta {
+    margin-bottom: 10px;
+  }
+  .blog-detail-item .blog-meta ul li {
+    font-size: 18px;
+  }
+  .blog-detail-item .blog-banner {
+    padding-bottom: 50px;
+  }
+  
+  /* ---Social With Tags--- */
+  .social-with-tags {
+    background-color: #f6f7fb;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 479px) {
+    .social-with-tags {
+      flex-direction: column;
+    }
+  }
+  .social-with-tags .tags {
+    display: flex;
+  }
+  .social-with-tags .tags .title {
+    color: #5f5f5f;
+    font-weight: 500;
+  }
+  .social-with-tags .tags ul {
+    display: flex;
+    margin-left: 5px;
+  }
+  .social-with-tags .tags ul li:not(:last-child) {
+    margin-right: 5px;
+  }
+  .social-with-tags .tags ul li a {
+    color: #abd373;
+  }
+  .social-with-tags .social-link ul li:not(:last-child) {
+    padding-right: 15px;
+  }
+  .social-with-tags .social-link ul li i {
+    transition: all 0.3s ease 0s;
+    color: #000000;
+  }
+  .social-with-tags .social-link ul li i:hover {
+    color: #abd373;
+  }
+  .social-with-tags .social-link ul li.comment span {
+    color: #000000;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  /* ---Blog Comment--- */
+  .blog-comment {
+    background-color: #f6f7fb;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 575px) {
+    .blog-comment {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .blog-comment .heading {
+    margin-bottom: 60px;
+    line-height: 24px;
+    font-size: 30px;
+    color: #222121;
+  }
+  @media (max-width: 479px) {
+    .blog-comment .heading {
+      font-size: 28px;
+    }
+  }
+  .blog-comment-item {
+    display: flex;
+  }
+  @media (max-width: 479px) {
+    .blog-comment-item {
+      flex-direction: column;
+    }
+  }
+  .blog-comment-item[class*=blog-comment-item]:not(:last-child) {
+    padding-bottom: 60px;
+  }
+  .blog-comment-item.relpy-item {
+    padding-left: 60px;
+  }
+  @media (max-width: 479px) {
+    .blog-comment-item.relpy-item {
+      padding-left: 0;
+    }
+  }
+  .blog-comment-img {
+    width: 120px;
+  }
+  .blog-comment-img img {
+    width: 100%;
+  }
+  .blog-comment-content {
+    width: calc(100% - 115px);
+    margin-left: 30px;
+  }
+  @media (max-width: 479px) {
+    .blog-comment-content {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 25px;
+    }
+  }
+  .blog-comment-content .user-meta .date {
+    color: #666666;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .blog-comment-content .user-name {
+    color: #333333;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+  }
+  .blog-comment-content .user-comment {
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .blog-comment-content .comment-btn {
+    background-color: #343434;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .blog-comment-content .comment-btn:hover {
+    background-color: #abd373;
+  }
+  .blog-comment-content .comment-btn.style-2 {
+    background-color: #abd373;
+  }
+  .blog-comment-content .comment-btn.style-2:hover {
+    background-color: #343434;
+  }
+  
