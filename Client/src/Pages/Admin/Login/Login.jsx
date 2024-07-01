@@ -25,7 +25,7 @@ function AdminLogin() {
         sessionStorage.setItem('adminIsLogged', true);
 
         toast.success('Login successful!');
-        navigate('/admin/dashboard');
+        navigate('/admin/products');
       } catch (error) {
         toast.error('Invalid email or password');
       }

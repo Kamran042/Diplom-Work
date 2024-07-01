@@ -7,7 +7,7 @@ const Preloader = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
-    }, 2000); // Здесь устанавливается время загрузки (в миллисекундах)
+    }, 5000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,6 +21,8 @@ const Preloader = () => {
           <div className="bounce3"></div>
         </div>
       </div>
+      <div className="left-half"></div>
+      <div className="right-half"></div>
     </div>
   );
 };

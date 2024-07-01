@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+
+import React, { useEffect, useState, useRef, useContext } from "react";
 import "./SaleSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,13 +7,25 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import axios from "axios";
+import MainContext from "../../../../Context/Context";
+import Loading from "../../../../Pages/Site/Loading/Loading"; 
 
 const SaleSlider = () => {
   const [slides, setSlides] = useState([]);
-  const swiperRef = useRef(null); // Создаем референс для Swiper
+  const swiperRef = useRef(null);
+  const { loading, setLoading } = useContext(MainContext);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   useEffect(() => {
+    setLoading(true); 
+
+    const timer = setTimeout(() => {
+      setInitialLoad(false); 
+    }, 3000);
+
     fetchSlides();
+
+    return () => clearTimeout(timer); 
   }, []);
 
   const fetchSlides = async () => {
@@ -23,18 +36,23 @@ const SaleSlider = () => {
       setSlides(response.data);
       console.log("Slides fetched:", response.data);
 
-      // Явно обновляем Swiper после получения данных
       if (swiperRef.current) {
         swiperRef.current.swiper.update();
       }
     } catch (error) {
       console.error("Error fetching slides:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
+  if (loading || initialLoad) {
+    return <Loading />;
+  }
+
   return (
     <Swiper
-      ref={swiperRef} // Передаем референс на Swiper
+      ref={swiperRef}
       loop
       spaceBetween={50}
       slidesPerView={1}
